@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+
+body{
+    margin: 0px; 
+    padding: 0px;
+    background-image:linear-gradient(45deg,#ebecf5,rgb(141, 138, 138));
+    height: 1200px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+h1.header{
+    color:#f8f8f8;
+    font-family: 'Pacifico', cursive;
+    font-size: 80px;
+    text-align:center;
+    margin: 1px;
+}
+
+h1.header:hover{
+    font-size: 90px ;
+    transition: 2s;
+}
+
+
+.navfixo{
+    height: 80px;
+    width:100%;
+    position: fixed ;
+    top: 0;
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: row wrap;
+    align-items: center;
+    animation-name: anima_nav ;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite ;
+    z-index: 1;
+}
+
+@keyframes anima_nav{
+    0%{
+        background: black;
+    }
+    50%{   
+        background: #282A36;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+.navfixo a{
+    padding-left: 80px;
+    padding-right: 40px;
+    text-decoration: none;
+    text-align: center;
+    font-family:'Lobster', sans-serif;
+    color: #fffafa;
+}
+
+.navfixo div{
+    font-family:'Lobster', sans-serif;
+    color: #fffafa;
+    height: 80px;
+    width: 30%;
+}
+
+
+.teste{
+    background: #282A36;
+    color: #fffafa;
+    font-family:'Lobster', sans-serif;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+}
+
+
+
+.satelite{
+    background-image:url(img/antena-parabolica.png);
+    background-size:contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.home_centro{
+    
+    margin: 50px;
+    background-color:none;  
+    height:700px;
+    display:flex;
+    justify-content: flex-end;
+    flex-flow: row wrap ;
+    
+
+}
+
+.home_centro div{
+    background-color: none;
+    padding: 50px;
+    position: relative;
+    margin-right: 150px;
+    height: 600;
+    width: 600px;  
+    font-family:'Lobster', sans-serif;  
+}
+
+.borda{
+    border:solid none;
+    border-radius: 0px;
+    border-top: 20px solid;
+    border-bottom: 20px solid;
+    border-color: #282A36;
+    text-align: center;
+    /*animation-name: anima_borda ;*/
+    animation-duration: 3s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite ;
+}
+ @keyframes anima_borda{
+    0%{
+        border-top: 20px solid #282A36;
+        border-bottom: 20px solid #282A36;
+    }
+    50%{ border-top: 0px solid #282a3600 ;
+         border-bottom: 0px solid #282a3600 ;
+    }
+    100%{ border-top: 20px solid #282A36;
+          border-bottom: 20px solid #282A36;
+    }
+
+
+ }
+
+ .imagen_div{
+    height:auto;
+    background-image: url(img/lampada.jpg) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    animation-name:anima_brilho ;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+ }
+
+ @keyframes anima_brilho{
+    0%{
+        opacity: 25%;
+        border-top: 20px solid ;
+        border-bottom: 20px solid ;
+        border-radius: 50%;
+        border-color: yellow;
+    }
+    50%{opacity: 100%;
+        border-top: 0px solid ;
+        border-bottom: 0px solid ;
+        border-radius: 50px;
+        }
+    }
